@@ -1,0 +1,81 @@
+
+/* anuncio superior INDEX - CATALOGO -COMPRAS CLIENTE */
+.cabeza{
+
+    background-color: rgba(189, 120, 63, 0.644);
+    text-align: center;
+    color: white;
+    
+    }
+    
+    /* Anuncio supeior  */
+    .espacio {
+        
+    margin-bottom: 0rem;
+    }
+    
+    
+    /* navbar superior  */
+    .menu-light{
+    
+    background-color: rgb(7, 7, 7);
+    
+    }
+    
+    /* navbar superior  */
+    .navbar-light .navbar-brand{
+    
+    color: rgba(255, 255, 255, 0.9);
+    
+    }
+    
+    
+    
+    /* navbar superior  */
+    .navbar-light .navbar-nav .nav-item .nav-link{
+    
+    color: rgba(255, 255, 255, 0.9);
+    }
+    
+    /* ESTILO COMPRAS --- PARA FELIPE */
+    .card  {
+    margin: 75px;
+    display: inline-block;
+    border: 1px solid rgb(2, 2, 2);
+    background-color: rgb(8, 8, 8);
+    color: white;
+    
+    }
+    
+    /* ESTILO COMPRAS --- PARA FELIPE */
+    .card-body .card-title{
+    color: rgb(251, 255, 252);
+    } 
+    
+    /* a href GENERAL */
+    a{
+        color: white;
+        text-decoration: none;
+       
+    }
+    
+    
+    /* navbar pie de pagina  */
+    .pie-light{
+        background-color: rgb(7, 7, 7);
+        margin-top: 1rem;
+       
+     
+    }
+    
+    /* estilos iconos pie de pagina */
+    a{
+        color: white;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+       
+    label{
+        display: inline-block;
+        width: 200px;
+    }
