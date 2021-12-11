@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './cliente/login/login.component';
 import { RegistrarComponent } from './cliente/registrar/registrar.component';
 import { ComprarComponent } from './comprar/comprar.component';
+import { ValidarTokenGuard } from './guards/validar-token.guard';
+import { InicioComponent } from './principal/inicio/inicio.component';
 import { ProductoComponent } from './producto/producto.component';
 
 const routes: Routes = [
@@ -22,7 +24,12 @@ const routes: Routes = [
     path:'productos',
     component: ProductoComponent
    },
-
+   {
+    path:'inicio',
+    component: InicioComponent,
+    canActivate:[ValidarTokenGuard],
+    canLoad:[ValidarTokenGuard]
+   },
 ];
 
 @NgModule({

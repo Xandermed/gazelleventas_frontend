@@ -11,15 +11,16 @@ import { ProductoService } from '../services/producto.service';
 export class ProductoComponent implements OnInit {
 
   public productos: Producto[]=[];
+  
   ProductoForm! : FormGroup;
   constructor(private productoService : ProductoService, private fb:FormBuilder) { }
 
   ngOnInit(): void {
 
     this.ProductoForm=this.fb.group({
-      id:[''],
       nombreProducto:['',Validators.required],
-      precio:['']
+      precio:[''],
+      cantidad:['']
     })
     this.traerProducto();
   }
@@ -39,9 +40,9 @@ export class ProductoComponent implements OnInit {
         if(respuesta.estado == "true"){
           this.traerProducto();
           this.ProductoForm=this.fb.group({
-            id:[''],
             nombreProducto:[''],
-            precio:['']
+            precio:[''],
+            cantidad:['']
           })
         }
   
